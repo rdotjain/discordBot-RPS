@@ -79,7 +79,7 @@ async def on_message(message):
         await message.channel.send(msg)
 
     if message.content.startswith('$scoreboard'):
-      scoreboard = f'{message.author.mention} ---> {user_score}' + '\n' + f'RockPpaperScissor Bot ---> {bot_score}' 
+      scoreboard = f'{message.author.mention} ---> {user_score}' + '\n' + f'RockPaperScissor Bot ---> {bot_score}' 
       await message.channel.send(scoreboard) 
 
 keep_alive()
